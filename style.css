@@ -1,0 +1,374 @@
+/* Estil purament tipogràfic i net, amb la paleta cromàtica Lavender, Orange, Charcoal, Teal, Beige */
+:root {
+    --brand-primary: #D59BF2;   /* Color exacte del pòster */
+    --brand-darkest: #31313E;   /* Dark Charcoal - Títols i textos principals */
+    --brand-dark: #21A1A1;      /* Teal - Subtítols, afiliacions i enllaços */
+    --brand-mid: #EEDBC5;       /* Beige - Línies i detalls clars */
+    --brand-accent: #F7941D;    /* Orange - Accent per hovers i icones */
+    --bg-main: #ffffff;         /* Fons blanc per màxima netedat */
+    --text-main: #31313E;       /* Dark Charcoal com a text de base */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Contenidors base - Expansió màxima de la web */
+main {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 40px 5% 80px 5%;
+}
+
+header, footer, nav {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Encapçalament - Gradient Lavender a Beige */
+header {
+    background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-mid) 100%);
+    padding: 50px 5%;
+    text-align: center;
+    border-bottom: 5px solid var(--brand-darkest);
+}
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    width: 100%;
+}
+
+.main-logo {
+    max-width: 180px;
+    height: auto;
+}
+
+header h1 {
+    color: var(--brand-darkest);
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 800;
+    line-height: 1.1;
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+/* Navegació - Plana i ampla */
+nav {
+    text-align: center;
+    padding: 20px 5%;
+    border-bottom: 1px solid var(--brand-mid);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+nav a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: var(--brand-accent);
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 4px;
+}
+
+/* Títols i Contingut */
+h2 {
+    color: var(--brand-darkest);
+    font-size: 2.4rem;
+    font-family: Georgia, serif;
+    font-weight: 700;
+    margin-top: 0.5em;
+    margin-bottom: 0.8em;
+    border-bottom: 3px solid var(--brand-mid);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: var(--brand-dark);
+    font-family: Georgia, serif;
+    font-weight: 600;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+p, ul, li {
+    font-size: 1.2rem;
+}
+
+a {
+    color: var(--brand-darkest);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    text-decoration-color: var(--brand-mid);
+    transition: all 0.2s;
+}
+
+a:hover {
+    color: var(--brand-accent);
+    text-decoration-color: var(--brand-accent);
+}
+
+/* Elements Específics */
+.poster {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 60px 0;
+}
+
+.event-info {
+    margin: 40px 0;
+}
+
+.event-info p {
+    margin: 12px 0;
+    font-size: 1.4rem;
+    color: var(--brand-darkest);
+    font-weight: 500;
+}
+
+/* Programa - Taula ampla */
+.table-container {
+    overflow-x: auto;
+    margin: 50px 0;
+}
+
+table.program-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.program-table th, table.program-table td {
+    padding: 25px 15px;
+    border-bottom: 1px solid var(--brand-mid);
+    text-align: left;
+    vertical-align: top;
+}
+
+table.program-table th {
+    font-weight: 800;
+    color: var(--brand-darkest);
+    font-size: 1.3rem;
+    border-bottom: 3px solid var(--brand-accent);
+}
+
+table.program-table .time {
+    font-weight: 800;
+    white-space: nowrap;
+    color: var(--brand-darkest);
+    width: 15%;
+    font-size: 1.25rem;
+}
+
+/* Llista de Participants - FORMAT LLISTA VERTICAL NET */
+.participants-list {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.speaker {
+    margin-bottom: 60px;
+    width: 100%;
+    border-bottom: 1px dashed var(--brand-mid);
+    padding-bottom: 30px;
+}
+
+.speaker:last-child {
+    border-bottom: none;
+}
+
+.speaker h4 {
+    margin: 0 0 10px 0;
+    color: var(--brand-darkest);
+    font-size: 1.8rem;
+    font-family: Georgia, serif;
+}
+
+.speaker .affiliation {
+    color: var(--brand-dark);
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.speaker p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Peu de pàgina (Footer) - Gradient subtil */
+footer {
+    background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-mid) 100%);
+    color: var(--brand-darkest);
+    padding: 20px 5% 15px 5%;
+    margin-top: 60px;
+    border-top: 5px solid var(--brand-darkest);
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centrat vertical dels dos blocs */
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-section.logos-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.footer-section.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.footer-section h4 {
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+    color: var(--brand-darkest);
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.contact-section h4 {
+    text-align: right;
+}
+
+.footer-logos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    margin: 0;
+    width: auto;
+}
+
+.footer-logos img {
+    max-width: 240px; /* Logos més grans */
+    height: auto;
+    display: block;
+}
+
+/* Contacte Inline - Noms seguits amb icones taronges */
+.contact-text {
+    font-size: 1.2rem;
+    color: var(--brand-darkest);
+    line-height: 2.2;
+}
+
+.mail-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background-color: var(--brand-accent); /* Orange #F7941D */
+    color: #ffffff !important;
+    border-radius: 50%;
+    transition: transform 0.3s, background-color 0.3s;
+    vertical-align: middle;
+    margin-left: 8px;
+    margin-right: 50px; /* Molt més espai entre noms */
+}
+
+.mail-icon:last-child {
+    margin-right: 0;
+}
+
+.mail-icon:hover {
+    background-color: var(--brand-darkest);
+    transform: scale(1.2);
+    color: #ffffff !important;
+}
+
+.footer-section a {
+    color: var(--brand-darkest);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.footer-section a:hover {
+    color: var(--brand-accent);
+}
+
+/* Responsivitat - Mòbil */
+@media (max-width: 768px) {
+    header h1 {
+        text-align: center;
+        font-size: 2.4rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .footer-section.logos-section {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .footer-logos {
+        justify-content: flex-start;
+        margin-top: 15px;
+    }
+
+    .footer-section.contact-section {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .contact-section h4 {
+        text-align: left;
+    }
+}

@@ -1,0 +1,6 @@
+<svg width="250" height="100" xmlns="http://www.w3.org/2000/svg">
+  <rect width="250" height="100" fill="transparent"/>
+  <text x="10" y="45" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#5e2a84">GÈNERE</text>
+  <text x="10" y="80" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#003e7e">UPC</text>
+  <line x1="10" y1="55" x2="200" y2="55" stroke="#5e2a84" stroke-width="2"/>
+</svg>

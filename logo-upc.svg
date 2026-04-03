@@ -1,0 +1,6 @@
+<svg width="300" height="100" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="100" fill="transparent"/>
+  <text x="10" y="50" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#003e7e">UPC</text>
+  <text x="10" y="75" font-family="Arial, sans-serif" font-size="14" fill="#333">UNIVERSITAT POLITÈCNICA DE CATALUNYA</text>
+  <text x="10" y="90" font-family="Arial, sans-serif" font-size="14" fill="#333">BARCELONATECH</text>
+</svg>
